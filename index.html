@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kissan Bazzar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#22c55e', // green-500
+                light: '#86efac', // green-300
+                dark: '#15803d', // green-700
+              },
+              secondary: {
+                DEFAULT: '#f59e0b', // amber-500
+                light: '#fcd34d', // amber-300
+                dark: '#b45309', // amber-700
+              },
+              earthy: {
+                DEFAULT: '#a16207', // yellow-700
+                light: '#fde047', // yellow-300
+                dark: '#713f12', // yellow-900
+              },
+              neutral: {
+                light: '#f9fafb', // gray-50
+                DEFAULT: '#e5e7eb', // gray-200
+                dark: '#374151', // gray-700
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.1",
+    "uuid": "https://esm.sh/uuid@^11.1.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
+<link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>
